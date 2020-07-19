@@ -1,0 +1,30 @@
+.pokemon-container{
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.pokemon-container .mat-card{
+  margin: 1rem;
+}
+.full-width {
+  width: 90%;
+}
+.submit-button{
+  width: 100%;
+  border-radius: 2rem;
+}
+.row{
+  padding: 1rem;
+}
+.half-button{
+  border-radius: 2rem;
+  display: inline;
+  width:40%;
+  align-content: space-around;
+}
+.flex-container{
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+
+}

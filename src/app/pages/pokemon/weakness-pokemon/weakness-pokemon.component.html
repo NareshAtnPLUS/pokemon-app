@@ -1,0 +1,31 @@
+<div class="pokemon-list">
+  <mat-grid-list cols="3" rowHeight="40rem" gutterSize="0.5rem" >
+    <mat-grid-tile *ngFor="let pokemon of pokemons$ | async">
+      <div class="pokemon-grid">
+      <mat-card class="pokemon-card">
+        <mat-card-header>
+          <mat-card-title>{{pokemon.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image class="pokemon-image" src={{pokemon.img}} alt="Photo of a Pokemon">
+        <mat-card-content>
+          <h4>Height: {{pokemon.height}}</h4>
+          <h4>Weight: {{pokemon.weight}}</h4>
+          <h4>Candy: {{pokemon.candy}}</h4>
+          <h4>Candy Count: {{pokemon.candy_count}}</h4>
+          <h4>Egg: {{pokemon.egg}}</h4>
+          <h4>Spawn Chance: {{pokemon.spawn_chance}}</h4>
+          <h4>Spawn Time: {{pokemon.spawn_time}}</h4>
+          <h4>Multipliers: {{pokemon.multipliers}}</h4>
+          <h4>Weakness: {{pokemon.weaknesses}}</h4>
+          <span>
+            <h4 class="weakness" >Next Evolution:</h4>
+          <span *ngFor="let evo of pokemon.next_evolution">
+            <h4 class="weakness" *ngIf="!(evo.name =='')">{{evo.name}},</h4>
+          </span>
+          </span>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

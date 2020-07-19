@@ -1,0 +1,8 @@
+<div class="next-evo-container">
+  <h2>Next Evolution of Entered Pokemon</h2>
+  <mat-list role="list" *ngFor="let nextEvo of nextEvolution$ |async">
+    <mat-list-item role="listitem">
+      <h3>{{nextEvo.name}}</h3>
+    </mat-list-item>
+  </mat-list>
+</div>

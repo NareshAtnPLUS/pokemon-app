@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+.pokemon-image{
+  height: 100px;
+  width: 100px;
+}
+.pokemon-list{
+  margin-top: 2rem;
+  width: 80%;
+  margin: auto;
+}
+.weakness{
+  display: inline;
+}
+.pokemon-grid{
+  padding: 1rem;
+}
